@@ -1,10 +1,8 @@
 package edu.temple.simplerecyclerview
 
 import android.view.LayoutInflater
-import android.view.ScrollCaptureCallback
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView.OnItemClickListener
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
@@ -12,7 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 
 // TODO (Step 1a: Accept lambda in constructor)
-class NumberDisplayAdapter (private val numbers: Array<Int>,private val callback: (Int)->UInt) : RecyclerView.Adapter<NumberDisplayAdapter.NumberViewHolder>() /* Step 3a: Provide Adapter Parent */ {
+class NumberDisplayAdapter(private val numbers: Array<Int>, private val callback: (Int) -> Unit) : RecyclerView.Adapter<NumberDisplayAdapter.NumberViewHolder>() /* Step 3a: Provide Adapter Parent */ {
 
     // TODO (Step 1b: Invoke lambda via onClickListener)
 
